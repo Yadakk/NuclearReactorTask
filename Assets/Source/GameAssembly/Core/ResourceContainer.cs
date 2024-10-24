@@ -22,6 +22,7 @@ namespace NuclearReactorTask
 
         private static Resource[] LoadResources()
         {
+            //TODO: Check as implementation
             var resourceSOs = UnityEngine.Resources.LoadAll<ResourceSO>("ResourceSOs");
             Resource[] resources = new Resource[resourceSOs.Length];
 
