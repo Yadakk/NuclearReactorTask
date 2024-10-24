@@ -22,16 +22,15 @@ namespace NuclearReactorTask
 
         private static Resource[] LoadResources()
         {
-            //TODO: Check as implementation
             var resourceSOs = UnityEngine.Resources.LoadAll<ResourceSO>("ResourceSOs");
             Resource[] resources = new Resource[resourceSOs.Length];
 
             for (int i = 0; i < resourceSOs.Length; i++)
             {
                 resources[i] = new(resourceSOs[i].Settings);
+                UnityEngine.Resources.UnloadAsset(resourceSOs[i]);
             }
 
-            UnityEngine.Resources.UnloadUnusedAssets();
             return resources;
         }
     }
