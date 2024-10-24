@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NuclearReactorTask.Bootstrap">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\Bootstrap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NuclearReactorTask.Game">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAACAAAAQBA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="buttonCreator" />
+      <Field Name="resources" />
+      <Field Name="resourceTicker" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NuclearReactorTask.IconButton">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\IconButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NuclearReactorTask.Resource">
+    <Position X="5.25" Y="2.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="NuclearReactorTask.Resource.State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Source\GameAssembly\Resource.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAAABAAAAQBAAAAAACAIAAAAAAAEAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\Resource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NuclearReactorTask.ResourceContainer">
+    <Position X="5.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\ResourceContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="resources" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NuclearReactorTask.ResourceSO">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAABAAAAAQAAAEAQAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\ResourceSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NuclearReactorTask.ResourceTicker">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\ResourceTicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NuclearReactorTask.ResourceViewModel">
+    <Position X="3.75" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAACAAAAAAAAAAAAAAAQgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\ResourceViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="iconButton" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NuclearReactorTask.ResourceViewSpawner">
+    <Position X="3" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Source\GameAssembly\ResourceViewSpawner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="iconButtonPrefab" />
+      <Field Name="resourceButtons" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

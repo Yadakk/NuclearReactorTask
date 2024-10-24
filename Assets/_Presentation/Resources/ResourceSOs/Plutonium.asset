@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348f6713fdbe2b345884533219a7dd48, type: 3}
+  m_Name: Plutonium
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Plutonium
+  <EnrichmentSprite>k__BackingField: {fileID: 21300000, guid: 1688a7a23fbf5c74fa4088f9c9386f14, type: 3}
+  <HalfLifeSprite>k__BackingField: {fileID: 21300000, guid: 5377085a30750ca47888a10e3d4666f3, type: 3}
+  <CollapseSprite>k__BackingField: {fileID: 21300000, guid: f3d90159893935f47ba944507b130ad3, type: 3}
+  <EnrichmentTime>k__BackingField: 5
+  <HalfLifeTime>k__BackingField: 2
