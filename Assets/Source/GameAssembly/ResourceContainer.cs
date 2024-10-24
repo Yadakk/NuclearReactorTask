@@ -27,9 +27,10 @@ namespace NuclearReactorTask
 
             for (int i = 0; i < resourceSOs.Length; i++)
             {
-                resources[i] = new(resourceSOs[i]);
+                resources[i] = new(resourceSOs[i].Settings);
             }
 
+            UnityEngine.Resources.UnloadUnusedAssets();
             return resources;
         }
     }

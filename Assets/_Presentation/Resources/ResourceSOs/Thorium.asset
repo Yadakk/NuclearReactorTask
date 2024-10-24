@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348f6713fdbe2b345884533219a7dd48, type: 3}
   m_Name: Thorium
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Thorium
-  <EnrichmentSprite>k__BackingField: {fileID: 21300000, guid: 32172370d437c3b458202a0a86f8b5f3, type: 3}
-  <HalfLifeSprite>k__BackingField: {fileID: 21300000, guid: 2b5d8f1e610d20d45a8536956e1011af, type: 3}
-  <CollapseSprite>k__BackingField: {fileID: 21300000, guid: f3d90159893935f47ba944507b130ad3, type: 3}
-  <EnrichmentTime>k__BackingField: 5
-  <HalfLifeTime>k__BackingField: 3
+  <Settings>k__BackingField:
+    <Name>k__BackingField: Thorium
+    <EnrichmentSprite>k__BackingField: {fileID: 21300000, guid: 32172370d437c3b458202a0a86f8b5f3, type: 3}
+    <HalfLifeSprite>k__BackingField: {fileID: 21300000, guid: 2b5d8f1e610d20d45a8536956e1011af, type: 3}
+    <CollapseSprite>k__BackingField: {fileID: 21300000, guid: f3d90159893935f47ba944507b130ad3, type: 3}
+    <EnrichmentTime>k__BackingField: 5
+    <HalfLifeTime>k__BackingField: 2

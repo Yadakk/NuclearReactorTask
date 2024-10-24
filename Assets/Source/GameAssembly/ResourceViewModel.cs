@@ -17,7 +17,7 @@ namespace NuclearReactorTask
             this.resource.OnStateChanged += OnActiveChangedHandler;
             this.iconButton.Button.onClick.AddListener(OnButtonClickHandler);
 
-            iconButton.Tmpu.text = resource.SO.name;
+            iconButton.Tmpu.text = resource.CurrentSettings.Name;
 
             UpdateView(this.resource.CurrentState);
         }
@@ -38,17 +38,17 @@ namespace NuclearReactorTask
             {
                 case Resource.State.Enrichment:
                     iconButton.Button.interactable = false;
-                    iconButton.Icon.sprite = resource.SO.EnrichmentSprite;
+                    iconButton.Icon.sprite = resource.CurrentSettings.EnrichmentSprite;
                     break;
 
                 case Resource.State.HalfLife:
                     iconButton.Button.interactable = true;
-                    iconButton.Icon.sprite = resource.SO.HalfLifeSprite;
+                    iconButton.Icon.sprite = resource.CurrentSettings.HalfLifeSprite;
                     break;
 
                 case Resource.State.Collapsed:
                     iconButton.Button.interactable = false;
-                    iconButton.Icon.sprite = resource.SO.CollapseSprite;
+                    iconButton.Icon.sprite = resource.CurrentSettings.CollapseSprite;
                     break;
             }
         }

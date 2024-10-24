@@ -8,21 +8,6 @@ namespace NuclearReactorTask
     public class ResourceSO : ScriptableObject
     {
         [field: SerializeField]
-        public string Name { get; private set; }
-
-        [field: SerializeField]
-        public Sprite EnrichmentSprite { get; private set; }
-
-        [field: SerializeField]
-        public Sprite HalfLifeSprite { get; private set; }
-
-        [field: SerializeField]
-        public Sprite CollapseSprite { get; private set; }
-
-        [field: SerializeField]
-        public float EnrichmentTime { get; private set; }
-
-        [field: SerializeField]
-        public float HalfLifeTime { get; private set; }
+        public Resource.Settings Settings { get; private set; }
     }
 }

@@ -18,13 +18,13 @@ namespace NuclearReactorTask
 
         public event System.Action<State> OnStateChanged;
 
-        public Resource(ResourceSO resourceSO)
+        public Settings CurrentSettings { get; private set; }
+
+        public Resource(Settings settings)
         {
-            SO = resourceSO;
+            CurrentSettings = settings;
             SetState(State.Enrichment);
         }
-
-        public ResourceSO SO { get; private set; }
 
         public State CurrentState
         {
@@ -66,11 +66,11 @@ namespace NuclearReactorTask
             switch (newState)
             {
                 case State.Enrichment:
-                    timeUntilNextState = SO.EnrichmentTime;
+                    timeUntilNextState = CurrentSettings.EnrichmentTime;
                     break;
 
                 case State.HalfLife:
-                    timeUntilNextState = SO.HalfLifeTime;
+                    timeUntilNextState = CurrentSettings.HalfLifeTime;
                     break;
 
                 case State.Collapsed:
@@ -79,6 +79,28 @@ namespace NuclearReactorTask
             }
 
             CurrentState = newState;
+        }
+
+        [System.Serializable]
+        public struct Settings
+        {
+            [field: SerializeField]
+            public string Name { get; private set; }
+
+            [field: SerializeField]
+            public Sprite EnrichmentSprite { get; private set; }
+
+            [field: SerializeField]
+            public Sprite HalfLifeSprite { get; private set; }
+
+            [field: SerializeField]
+            public Sprite CollapseSprite { get; private set; }
+
+            [field: SerializeField]
+            public float EnrichmentTime { get; private set; }
+
+            [field: SerializeField]
+            public float HalfLifeTime { get; private set; }
         }
     }
 }

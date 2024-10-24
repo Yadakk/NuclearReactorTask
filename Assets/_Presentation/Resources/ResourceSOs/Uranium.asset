@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348f6713fdbe2b345884533219a7dd48, type: 3}
   m_Name: Uranium
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Uranium
-  <EnrichmentSprite>k__BackingField: {fileID: 21300000, guid: dd4034271ca726f4e9ddf2044272db39, type: 3}
-  <HalfLifeSprite>k__BackingField: {fileID: 21300000, guid: 810d2c38f154efa4baace139dd9ee8b7, type: 3}
-  <CollapseSprite>k__BackingField: {fileID: 21300000, guid: f3d90159893935f47ba944507b130ad3, type: 3}
-  <EnrichmentTime>k__BackingField: 3
-  <HalfLifeTime>k__BackingField: 4
+  <Settings>k__BackingField:
+    <Name>k__BackingField: Uranium
+    <EnrichmentSprite>k__BackingField: {fileID: 21300000, guid: dd4034271ca726f4e9ddf2044272db39, type: 3}
+    <HalfLifeSprite>k__BackingField: {fileID: 21300000, guid: 810d2c38f154efa4baace139dd9ee8b7, type: 3}
+    <CollapseSprite>k__BackingField: {fileID: 21300000, guid: f3d90159893935f47ba944507b130ad3, type: 3}
+    <EnrichmentTime>k__BackingField: 6
+    <HalfLifeTime>k__BackingField: 1
